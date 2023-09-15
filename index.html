@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CivicTech</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Details of the Problem</h1>
+        <form id="form">
+
+                            <!--Name should go here-->
+            <div class="form-group">
+                <label for="question">Name</label>
+                <input type="text" id="question" name="question" required>
+            </div>
+                        <!--Detail of the Problem should go here-->
+            <div class="form-group">
+                <label for="answer">Details of the Problem</label>
+                <input type="text" id="answer" name="answer" required>
+            </div>
+                        <!--Location should go here-->
+            <div class="form-group">
+                <label for="answer">Location</label>
+                <input type="text" id="answer" name="answer" required>
+            </div>
+                        <!--Picture should go here-->
+            <div class="form-group">
+                <label for="answer">Picture of the Problem</label>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" accept="image/*" capture="camera" name="picture" id="picture" required>
+    
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
